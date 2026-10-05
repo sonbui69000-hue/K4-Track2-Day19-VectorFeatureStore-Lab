@@ -1,8 +1,9 @@
 # Reflection — Lab 19
 
-**Tên:** _<Họ Tên>_
+**Tên:** Bui Le Thai Son
+**MSSV:** 02880
 **Cohort:** _<A20-K4>_
-**Path đã chạy:** _<lite | docker | both>_
+**Path đã chạy:** lite
 
 ---
 
@@ -12,13 +13,18 @@
 > `paraphrase` / `mixed`), và tại sao? Khi nào bạn **không** dùng hybrid
 > (i.e. khi nào pure BM25 hoặc pure vector là lựa chọn đúng)?
 
-_Answer here._
+BM25 is strongest for exact queries because it matches the same words.
+Vector search is strongest for paraphrase queries because it matches meaning.
+Hybrid search is strongest for mixed queries because it combines both signals.
+Would not use hybrid when queries are only exact identifiers, error codes,
+or short keywords. Pure BM25 is simpler and faster there. Would use pure
+vector search for natural language questions where wording changes often.
 
 ---
 
 ## Điều ngạc nhiên nhất khi làm lab này
 
-_(Optional, 1–2 câu)_
+The best search mode depends on the query type. One mode is not always best.
 
 ---
 
